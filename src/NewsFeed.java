@@ -7,25 +7,24 @@ public class NewsFeed {
     String[] favoriteArticles = new String[10];
 
     public NewsFeed() {
-
     }
 
     public void setFavoriteArticles(int favoriteIndex, String newArticle) {
-
         favoriteArticles[favoriteIndex] = newArticle;
     }
     public String[] getTopics() {
-
         return topics;
     }
 
-    public String getTopTopic() {
+    public int getNumTopics () {
+        return topics.length;
+    }
 
+    public String getTopTopic() {
         return topics[0];
     }
 
     public void viewTopic (int topicIndex) {
-
         views[topicIndex] = views[topicIndex] + 1;
     }
 
@@ -33,6 +32,16 @@ public class NewsFeed {
         System.out.println("This is your daily news feed update");
         System.out.println("===================================");
         NewsFeed kompas = new NewsFeed();
+        NewsFeed test;
+
+//        if (args[0].equals("Human")) {
+//            String[] humanTopics = {"Politics", "Science", "Sports", "Love"};
+//            test = new NewsFeed(humanTopics);
+//        } else if (args[0].equals("Robot")) {
+//            String[] robotTopics = {"Oil", "Parts", "Algorithms", "Love"};
+//            test = new NewsFeed(robotTopics);
+//        }
+
 
         // System.out.println("The top topic is : " + kompas.getTopTopic());
 
@@ -52,5 +61,6 @@ public class NewsFeed {
         kompas.setFavoriteArticles(8, "Oil Price Rise Up Again!");
 
         System.out.println("Your all-time favorite articles : " + Arrays.toString(kompas.favoriteArticles));
+        System.out.println("The number of topics is : " + kompas.getNumTopics());
     }
 }
