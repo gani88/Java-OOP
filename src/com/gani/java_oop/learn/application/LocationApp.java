@@ -1,4 +1,6 @@
-package com.gani.java_oop.Abstract;
+package com.gani.java_oop.learn.application;
+
+import com.gani.java_oop.Abstract.City;
 
 public class LocationApp {
 

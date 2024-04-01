@@ -1,7 +1,7 @@
-package com.gani.java_oop.Abstract;
+package com.gani.java_oop.learn.data;
 
 public abstract class Animals {
-    String name;
+    public  String name;
 
     public abstract void run();
 }
