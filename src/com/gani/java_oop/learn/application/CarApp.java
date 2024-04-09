@@ -9,8 +9,8 @@ public class CarApp {
 
         Car tesla = new Tesla();
         System.out.println(tesla.getTier());
-        tesla.drive();
         System.out.println(tesla.getBrand());
         System.out.println(tesla.isMaintenance());
+        tesla.drive();
     }
 }
