@@ -11,8 +11,12 @@ public class Bank {
 
     public static void main(String[] args) {
         Bank bankOfGods = new Bank();
-        System.out.println(bankOfGods.accountOne.name);
+//        System.out.println(bankOfGods.accountOne.name);
         bankOfGods.accountOne.addFunds(50);
+        bankOfGods.accountOne.getInfo();
+        System.out.println("=============");
+//        System.out.println(bankOfGods.accountOne.getBalance());
+        bankOfGods.accountOne.setBalance(15000);
         bankOfGods.accountOne.getInfo();
     }
 }
